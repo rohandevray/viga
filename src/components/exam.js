@@ -7,6 +7,7 @@ import {
   faAngleLeft,
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 import Exame from "../images/exame.svg";
 import Ring from "../images/reng.svg";
 import Box1 from "../images/box1.svg";
@@ -120,13 +121,18 @@ const Exam = () => {
                 Previous
               </button>
               <button className="two">
-                Next
-                <FontAwesomeIcon
-                  icon={faAngleRight}
-                  size="1x"
-                  color="black"
-                  id="icon2"
-                />
+                <Link
+                  to="/warning"
+                  style={{ textDecoration: "none", color: "black" }}
+                >
+                  Next
+                  <FontAwesomeIcon
+                    icon={faAngleRight}
+                    size="1x"
+                    color="black"
+                    id="icon2"
+                  />
+                </Link>
               </button>
             </div>
           </Fine>
@@ -267,6 +273,7 @@ const Fine = styled.div`
     .two {
       padding-left: 2rem;
       margin-left: 17px;
+      cursor: pointer;
     }
   }
   button {
@@ -284,7 +291,7 @@ const Fine = styled.div`
     }
     #icon2 {
       position: relative;
-      top: 2.85px;
+      top: 1px;
       left: 13%;
     }
     font-weight: bold;
