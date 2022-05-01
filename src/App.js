@@ -7,6 +7,11 @@ import Onboard1 from "./components/onboard1";
 import Onboard2 from "./components/onboard2";
 import Onboard3 from "./components/onboard3";
 import Onboard4 from "./components/onboard4";
+import Blank from "./components/blank";
+import Home from "./components/home";
+import Check from "./components/check";
+import Settings from "./components/settings";
+import Exam from "./components/exam";
 
 //routes and links
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -25,6 +30,11 @@ function App() {
           <Route path="onboard2/*" element={<Onboard2 />} />
           <Route path="onboard3/*" element={<Onboard3 />} />
           <Route path="onboard4/*" element={<Onboard4 />} />
+          <Route path="blank/*" element={<Blank />} />
+          <Route path="home/*" element={<Home />} />
+          <Route path="check/*" element={<Check />} />
+          <Route path="settings/*" element={<Settings />} />
+          <Route path="exam/*" element={<Exam />} />
         </Routes>
       </AnimatePresence>
     </div>

@@ -52,7 +52,7 @@ const Back = styled.div`
   .last {
     position: absolute;
     bottom: 8%;
-    left: 49.5%;
+    left: 48.9%;
     font-weight: 100;
     opacity: 0.7;
   }
@@ -69,13 +69,13 @@ const Card = styled.div`
   p {
     position: absolute;
     bottom: 31%;
-    left: 30%;
+    left: 26.5%;
     cursor: pointer;
   }
   button {
     position: absolute;
     bottom: 13%;
-    left: 41%;
+    left: 38%;
     background: transparent;
     border: none;
     outline: none;
@@ -104,7 +104,7 @@ const Dots = styled.div`
   height: 1rem;
   position: absolute;
   bottom: 9%;
-  left: 41%;
+  left: 38%;
   .dot1 {
     height: 7px;
     width: 10px;

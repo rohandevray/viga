@@ -14,7 +14,7 @@ const Onboard4 = () => {
         </Mogo>
         <p>Protecting rights, respecting privacy</p>
         <button>
-          <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+          <Link to="/blank" style={{ textDecoration: "none", color: "white" }}>
             Go to Dashboard
             <FontAwesomeIcon
               icon={faGreaterThan}
@@ -32,7 +32,7 @@ const Onboard4 = () => {
         </Dots>
       </Card>
       <p className="last">
-        <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+        <Link to="/blank" style={{ textDecoration: "none", color: "white" }}>
           Skip
         </Link>
       </p>
