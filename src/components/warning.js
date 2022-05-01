@@ -6,6 +6,8 @@ import {
   faCircle,
   faAngleLeft,
   faAngleRight,
+  faCircleExclamation,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import Exame from "../images/exame.svg";
 import Ring from "../images/reng.svg";
@@ -14,7 +16,7 @@ import Box2 from "../images/box2.svg";
 import Box3 from "../images/box3.svg";
 import Box4 from "../images/box.svg";
 
-const Exam = () => {
+const Warning = () => {
   return (
     <Back>
       <Time>
@@ -130,6 +132,36 @@ const Exam = () => {
               </button>
             </div>
           </Fine>
+          <Warn1>
+            <p>Please adjust your camera</p>
+            <p className="time">12:30pm</p>
+          </Warn1>
+          <Warn2>
+            <FontAwesomeIcon
+              icon={faCircleExclamation}
+              size="2x"
+              color="red"
+              id="icon"
+            />
+            <div className="left">
+              <h4>Warning 1</h4>
+              <p>Warning 1</p>
+            </div>
+            <FontAwesomeIcon icon={faXmark} size="2x" color="grey" id="xcon" />
+          </Warn2>
+          <Warn3>
+            <FontAwesomeIcon
+              icon={faCircleExclamation}
+              size="2x"
+              color="yellow"
+              id="icon"
+            />
+            <div className="left">
+              <h4>Warning 2</h4>
+              <p>Warning 2</p>
+            </div>
+            <FontAwesomeIcon icon={faXmark} size="2x" color="grey" id="xcon" />
+          </Warn3>
         </div>
       </div>
     </Back>
@@ -290,4 +322,77 @@ const Fine = styled.div`
     font-weight: bold;
   }
 `;
-export default Exam;
+
+const Warn1 = styled.div`
+  position: absolute;
+  width: 300px;
+  height: 55px;
+  right: 8%;
+  bottom: 25%;
+  background: #232527;
+  padding: 1%;
+  .time {
+    font-size: 10px;
+    position: absolute;
+    right: 5%;
+  }
+`;
+const Warn2 = styled.div`
+  position: absolute;
+  width: 300px;
+  height: 58px;
+  padding: 0.5%;
+  right: 8%;
+  bottom: 15%;
+  background: #232527;
+  display: flex;
+  #icon {
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+  h4 {
+    color: red;
+  }
+  p {
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 2px;
+  }
+  .left {
+    margin-left: 9px;
+  }
+  #xcon {
+    position: absolute;
+    right: 7%;
+  }
+`;
+const Warn3 = styled.div`
+  position: absolute;
+  width: 300px;
+  height: 58px;
+  padding: 0.5%;
+  right: 8%;
+  bottom: 5%;
+  display: flex;
+  background: #232527;
+  #icon {
+    padding-left: 4px;
+    margin-top: 5px;
+  }
+  p {
+    font-size: 0.7rem;
+    position: relative;
+    bottom: 2px;
+  }
+  .left {
+    margin-left: 9px;
+  }
+  h4 {
+    color: yellow;
+  }
+  #xcon {
+    position: absolute;
+    right: 7%;
+  }
+`;
+export default Warning;

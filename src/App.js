@@ -12,6 +12,7 @@ import Home from "./components/home";
 import Check from "./components/check";
 import Settings from "./components/settings";
 import Exam from "./components/exam";
+import Warning from "./components/warning";
 
 //routes and links
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -35,6 +36,7 @@ function App() {
           <Route path="check/*" element={<Check />} />
           <Route path="settings/*" element={<Settings />} />
           <Route path="exam/*" element={<Exam />} />
+          <Route path="warning/*" element={<Warning />} />
         </Routes>
       </AnimatePresence>
     </div>
